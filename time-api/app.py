@@ -15,7 +15,7 @@ def get_time():
 	}
 	return jsonify(payload), 200
 
-@app.route("/ping")
+@app.get("/ping")
 def ping():
 	return jsonify({"message": "API is alive"})
 
